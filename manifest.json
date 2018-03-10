@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "TerriFiC",
+  "description": "Trustful Fact-Checking",
+  "version": "1.0",
+  "homepage_url": "https://github.com/vamind/terrific",
+
+  "icons": {
+    "48": "icons/basic-48.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": "icons/basic-48.png",
+    "theme_icons": [{
+        "light": "icons/basic-48.png",
+        "dark": "icons/basic-48.png",
+        "size": 48
+    }],
+    "default_title": "TerriFiC"
+  }
+
+}
