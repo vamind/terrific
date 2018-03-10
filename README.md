@@ -1,0 +1,2 @@
+# TerriFiC
+Trustful Fact-Checking
