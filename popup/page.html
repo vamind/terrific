@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <div class="container" id="js-logreg">
+        <h1 class="mt-3">Terrific</h1>
+        <div class="form-group">
+            <label for="js-email">Email address</label>
+            <input type="email" class="form-control" id="js-email" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="js-password">Password</label>
+            <input type="password" class="form-control" id="js-password" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-alert js-register">Register</button>
+        <button type="submit" class="btn btn-primary js-login">Login</button>
+    </div>
+    <div class="container d-none" id="js-list">
+        <h1 class="mt-3">Terrific</h1>
+        <div id="js-ratings">
+            <h3>Is this page trustful?</h3>
+            <button type="submit" class="btn btn-success js-yes btn-lg btn-block">YES</button>
+            <button type="submit" class="btn btn-danger js-no btn-lg btn-block">NO</button>
+        </div>
+        <div id="js-reason-block" class="d-none">
+            <div class="form-group">
+                <label for="js-reason">Reason</label>
+                <textarea class="form-control" id="js-reason" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary js-back">back</button>
+            <button type="submit" class="btn btn-danger js-no-send">Send</button>
+        </div>
+
+        <h3 class="mt-5">Shared ratings for this page</h3>
+        <ul class="list-group pb-3" id="js-rating-list">
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start list-group-item-danger">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Barbara Laker</h5>
+                    <small>3 days ago</small>
+                </div>
+                <small>That data are not correct. Check page 24 of http://ec.europa.eu/eurostat/documents/3217494/8668156/KS-BJ-18-002-EN-N.pdf/b8c94c9d-ac2c-47ee-a7e7-b4cf8a5db938</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start list-group-item-success">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">David Barstow</h5>
+                    <small>6 days ago</small>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start list-group-item-success">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Eric Eyre</h5>
+                    <small>5 days ago</small>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start list-group-item-success">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Chris Hamby</h5>
+                    <small>2 days ago</small>
+                </div>
+            </a>
+        </ul>
+    </div>
+    <div class="container d-none" id="js-registration-sent">
+        <h1 class="mt-3">Terrific</h1>
+        <div class="alert alert-secondary" role="alert">
+            Thank you for the registration. Please check your email for your verification link to activate your account.
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

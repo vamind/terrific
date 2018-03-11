@@ -1,0 +1,10 @@
+body {
+    height: 270px;
+    width: 350px;
+    background-color: #f6f6f6;
+}
+
+#js-list {
+    padding: 0px 16px;
+    overflow-x: hidden;
+}

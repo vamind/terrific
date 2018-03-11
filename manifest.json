@@ -21,7 +21,8 @@
         "dark": "icons/basic-48.png",
         "size": 48
     }],
-    "default_title": "TerriFiC"
+    "default_title": "TerriFiC",
+    "default_popup": "popup/page.html"
   }
 
 }
